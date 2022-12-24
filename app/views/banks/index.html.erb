@@ -1,0 +1,9 @@
+<h1>Banks</h1>
+
+<%= link_to 'Create Bank', new_bank_path %>
+
+<% @banks.each do |b| %>
+  <div>
+    <%= link_to b.name, bank_path(b) %>
+  </div>
+<% end %>

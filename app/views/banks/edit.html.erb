@@ -1,0 +1,5 @@
+<h1>Edit bank</h1>
+<%= simple_form_for @bank, data: { turbo: false }, validate: true do |b|%>
+  <%= b.input :name, label: 'Bank name ', error: "Error: #{@bank.errors.full_messages_for(:name).first}" %>
+<%= b.button :submit %>
+<% end %>
