@@ -1,8 +1,8 @@
 
 <h1>Edit bank</h1>
   <%= simple_form_for @bank, data: { turbo: false }, validate: true do |b|%>
-    <%= b.input :name, label: 'Bank name ', error: "Error: #{@bank.errors.full_messages_for(:name).first}", class:"form-label p-2 bg-light border" %>
-    <%= b.button :submit, class: "btn btn-primary p-2 border" %>
+    <%=t b.input :name, label: 'Bank name ', error: "Error: #{@bank.errors.full_messages_for(:name).first}", class:"form-label p-2 bg-light border" %>
+    <%=t b.button :submit, class: "btn btn-primary p-2 border" %>
   <% end %>
 
 

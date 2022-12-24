@@ -1,9 +1,36 @@
 <h1>Suppliers</h1>
 
-<%= link_to 'Create Supplier', new_supplier_path, class: "btn btn-primary p-2" %>
+<%= link_to 'Create Supplier', new_supplier_path, class: "btn btn-primary" %>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Nit</th>
+    <th scope="col">Contact Name</th>
+    <th scope="col">Contact phone</th>
+    <th scope="col">Bank</th>
+    <th scope="col">Account number</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% @suppliers.each do |b| %>
+    <tr>
+      <th scope="row"><%= link_to b.name, supplier_path(b) %></th>
+      <td><%= b.nit %></td>
+      <td><%= b.contact_name %></td>
+      <td><%= b.contact_cel %></td>
+      <% @bank = Bank.find(b.bank_id) %>
+      <td><%= @bank.name %></td>
+      <td><%= b.account_number %></td>
+      <td><%= link_to 'Edit', edit_supplier_path(b), class: "btn btn-primary p-2" %></td>
+      <td><%= button_to "Delete", {:controller => :suppliers,
+                                   :action => 'destroy', :id => b.id }, :method => :delete,
+                        form: { data: { turbo_confirm: "Are you sure?" }}, class: "btn btn-primary p-2" %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
 
-<% @suppliers.each do |b| %>
-  <ul class="list-group w-25 p-2">
-    <li class="list-group-item "><%= link_to b.name, supplier_path(b) %></li>
-  </ul>
-<% end %>
+<%= will_paginate @suppliers, :container => false %>

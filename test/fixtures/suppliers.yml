@@ -5,9 +5,11 @@ one:
   nit: "587658415-5"
   contact_name: MyString
   contact_cel: MyString
+  bank_id: "1"
 
 two:
   name: MyString2
   nit: "157896548-1"
   contact_name: MyString
   contact_cel: MyString
+  bank_id: "2"

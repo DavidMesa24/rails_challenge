@@ -52,6 +52,7 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.7.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v3.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.0.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.12.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v1.1.5, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -94,17 +95,18 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v2.0.21, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.3.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v1.3.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.5, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="view_component (v2.80.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webdrivers (v5.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.9, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.5, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.3.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.6, RVM: ruby-2.7.6) [gem]" level="application" />
   </component>
@@ -121,31 +123,41 @@
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
+        <option value="component" />
         <option value="controller" />
         <option value="devise" />
         <option value="devise:controllers" />
         <option value="devise:install" />
         <option value="devise:views" />
+        <option value="erb:component" />
         <option value="generator" />
+        <option value="haml:component" />
         <option value="helper" />
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
+        <option value="locale:component" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
+        <option value="preview:component" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
+        <option value="rspec:component" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="simple_form:install" />
+        <option value="slim:component" />
         <option value="stimulus" />
+        <option value="stimulus:component" />
         <option value="system_test" />
+        <option value="tailwindcss:component" />
         <option value="task" />
         <option value="test_unit:channel" />
+        <option value="test_unit:component" />
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
@@ -160,31 +172,41 @@
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
+        <option value="component" />
         <option value="controller" />
         <option value="devise" />
         <option value="devise:controllers" />
         <option value="devise:install" />
         <option value="devise:views" />
+        <option value="erb:component" />
         <option value="generator" />
+        <option value="haml:component" />
         <option value="helper" />
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
+        <option value="locale:component" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
+        <option value="preview:component" />
         <option value="resource" />
         <option value="responders:install" />
         <option value="responders_controller" />
+        <option value="rspec:component" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="simple_form:install" />
+        <option value="slim:component" />
         <option value="stimulus" />
+        <option value="stimulus:component" />
         <option value="system_test" />
+        <option value="tailwindcss:component" />
         <option value="task" />
         <option value="test_unit:channel" />
+        <option value="test_unit:component" />
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
@@ -503,6 +525,11 @@
           <RakeTaskImpl description="" fullCommand="tmp/cache/assets" id="tmp/cache/assets" />
           <RakeTaskImpl description="" fullCommand="tmp/pids" id="tmp/pids" />
           <RakeTaskImpl description="" fullCommand="tmp/sockets" id="tmp/sockets" />
+          <RakeTaskImpl id="view_component">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="view_component:statsetup" id="statsetup" />
+            </subtasks>
+          </RakeTaskImpl>
         </subtasks>
       </RakeTaskImpl>
     </option>

@@ -1,5 +1,5 @@
 class Supplier < ApplicationRecord
-  has_one :bank
+  belongs_to :bank
   validates_presence_of :name, message: 'Name should be present'
   validates_length_of :name, :minimum => 1
   validates_presence_of :nit, message: 'Nit should be present'

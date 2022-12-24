@@ -1,7 +1,7 @@
 class SuppliersController < ApplicationController
-
+  before_action :authenticate_user!
   def index
-    @suppliers = Supplier.all
+    @suppliers = Supplier.paginate(:page => params[:page], :per_page => 10)
   end
 
   def show

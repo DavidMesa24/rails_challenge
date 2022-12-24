@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # Define routes for the banks controller
+  scope "/:locale" do
+  root to: 'suppliers#index'
   resources :banks
   resources :suppliers
-end
+  end
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+  end

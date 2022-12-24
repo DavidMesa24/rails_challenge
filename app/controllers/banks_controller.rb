@@ -1,4 +1,6 @@
 class BanksController < ApplicationController
+
+  before_action :authenticate_user!
   def index
     @banks = Bank.all
   end
@@ -35,9 +37,15 @@ class BanksController < ApplicationController
   end
 
   def destroy
+    @sup = Supplier.where(:bank_id => params[:id])
+    if @sup.blank?
     @bank = Bank.find(params[:id])
     @bank.destroy
     redirect_to banks_url, :notice => "Successfully destroyed bank."
+    else
+      redirect_to banks_url, :notice => "Bank is in use. Delete the supplier first."
+    end
+
   end
 
   private
