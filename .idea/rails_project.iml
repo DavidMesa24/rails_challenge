@@ -90,9 +90,11 @@
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.7.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v5.1.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.0, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v2.0.21, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.3.1, RVM: ruby-2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v1.3.2, RVM: ruby-2.7.6) [gem]" level="application" />
@@ -139,6 +141,7 @@
         <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
+        <option value="simple_form:install" />
         <option value="stimulus" />
         <option value="system_test" />
         <option value="task" />
@@ -177,6 +180,7 @@
         <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
+        <option value="simple_form:install" />
         <option value="stimulus" />
         <option value="system_test" />
         <option value="task" />

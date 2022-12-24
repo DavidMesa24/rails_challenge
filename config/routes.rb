@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   # Define routes for the banks controller
   resources :banks
+  resources :suppliers
 end

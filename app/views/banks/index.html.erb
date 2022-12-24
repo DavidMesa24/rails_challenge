@@ -1,9 +1,9 @@
 <h1>Banks</h1>
 
-<%= link_to 'Create Bank', new_bank_path %>
+<%= link_to 'Create Bank', new_bank_path, class: "btn btn-primary p-2" %>
 
 <% @banks.each do |b| %>
-  <div>
-    <%= link_to b.name, bank_path(b) %>
-  </div>
+  <ul class="list-group w-25 p-2">
+    <li class="list-group-item "><%= link_to b.name, bank_path(b) %></li>
+  </ul>
 <% end %>

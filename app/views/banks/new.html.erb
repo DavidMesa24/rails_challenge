@@ -1,4 +1,10 @@
-<%= simple_form_for @bank, data: { turbo: false } do |b|%>
-  <%= b.input :name, label: 'Bank name', error: "Error: #{@bank.errors.full_messages_for(:name).first}" %>
-<%= b.button :submit %>
-<% end %>
+<div class="text-lg font-medium leading-6 text-gray-900">
+  <%= simple_form_for @bank, data: { turbo: false } do |b|%>
+    <div class="form-label">
+    <%= b.input :name, label: 'Bank name', error: "Error: #{@bank.errors.full_messages_for(:name).first}", class: "w-25 p-2" %>
+    </div>
+    <%= b.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+

@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Nit</th>
+    <th scope="col">Contact Name</th>
+    <th scope="col">Contact phone</th>
+    <th scope="col">Bank</th>
+    <th scope="col">Account number</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row"><%= @supplier.name %></th>
+    <td><%= @supplier.nit %></td>
+    <td><%= @supplier.contact_name %></td>
+    <td><%= @supplier.contact_cel %></td>
+    <% @bank = Bank.find(@supplier.bank_id) %>
+    <td><%= @bank.name %></td>
+    <td><%= @supplier.account_number %></td>
+  </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_supplier_path(@supplier), class: "btn btn-primary p-2" %>
+<%= button_to "Delete", {:controller => :suppliers,
+                         :action => 'destroy', :id => @supplier.id }, :method => :delete,
+              form: { data: { turbo_confirm: "Are you sure?" }}, class: "btn btn-primary p-2" %>
