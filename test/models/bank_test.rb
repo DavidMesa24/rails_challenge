@@ -39,4 +39,15 @@ class BankTest < ActiveSupport::TestCase
     bank.name = "Bank2"
     assert bank.save, "Saved the bank without a name"
   end
+
+  test "should not update with duplicate name" do
+    bank = Bank.new
+    bank.name = "Bank"
+    assert bank.save, "Saved the bank without a name"
+    bank2 = Bank.new
+    bank2.name = "Bank2"
+    assert bank2.save, "Saved the bank without a name"
+    bank2.name = "Bank"
+    assert_not bank2.save, "Saved the bank without a name"
+  end
 end
