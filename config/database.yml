@@ -1,18 +1,17 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  username: david
-  database: development_project
-  password: 12345678
-  host: database-1.c5ik7vhqusax.sa-east-1.rds.amazonaws.com
-  port: 5432
-
+    adapter: postgresql
+    encoding: utf8
+    database: elmpmnhh
+    username: elmpmnhh
+    pool: 5
+    password: cnV0F-iyy-PrXBih2l_nbg_9MKXVI00z
+    host:  	babar.db.elephantsql.com
 test:
   adapter: postgresql
-  encoding: unicode
-  username: david
-  database: test_project
-  password: 12345678
-  host: database-1.c5ik7vhqusax.sa-east-1.rds.amazonaws.com
-  port: 5432
+  encoding: utf8
+  database: sxxrdthy
+  username: sxxrdthy
+  pool: 5
+  password: e327938wshO27Z-i6zQbDz9t8gNVCdpV
+  host:  	babar.db.elephantsql.com
 
