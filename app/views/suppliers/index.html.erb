@@ -15,14 +15,14 @@
   </tr>
   </thead>
   <tbody>
+  <% @banks = Bank.all %>
     <% @suppliers.each do |b| %>
     <tr>
       <th scope="row"><%= link_to b.name, supplier_path(b) %></th>
       <td><%= b.nit %></td>
       <td><%= b.contact_name %></td>
       <td><%= b.contact_cel %></td>
-      <% @bank = Bank.find(b.bank_id) %>
-      <td><%= @bank.name %></td>
+      <td><%= @banks.where(id:b.bank_id).first.name %></td>
       <td><%= b.account_number %></td>
       <td><%= link_to 'Edit', edit_supplier_path(b), class: "btn btn-primary p-2" %></td>
       <td><%= button_to "Delete", {:controller => :suppliers,
