@@ -4,10 +4,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-
   # Define routes for the banks controller
+  root "suppliers#index"
   scope "/:locale" do
-  root to: 'suppliers#index'
   resources :banks
   resources :suppliers
   end

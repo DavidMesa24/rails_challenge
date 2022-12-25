@@ -14,7 +14,7 @@ require 'faker'
     contact_cel: Faker::Number.number(digits: 10),
     contact_name: Faker::Name.name,
     nit: "#{Faker::Number.number(digits: 9)}-#{Faker::Number.number(digits: 1)}",
-    bank_id: 12,
+    bank_id: Faker::Number.rand_in_range(1,4),
     account_number: Faker::Number.number(digits: 11)
                   })
   p a.save
