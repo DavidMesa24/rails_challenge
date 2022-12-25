@@ -1,25 +1,21 @@
-# README
+## Considerations ##
+* This is a Ruby on Rails Application
+* It is *not necessary* to configure the postgres database. It is already hosted on Amazon Web Services.
+* Ruby version: 3.0.2
+* Rails version: 7.0.4
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pre-requisites ##
+* Docker
+* Docker Compose
 
-Things you may want to cover:
+## Run and Enjoy ##
+* You can run the app with docker. Just run `docker-compose up` inside rails_challenge folder and it will be available on `localhost:3000`.
 
-* Ruby version
+  
+## Test ##
+* You can test the app with command $ `Rails test`
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# rails_project
+## David Santiago Mesa Martínez. ##
+### davidmesa02@gmail.com ###
+### +57 310 576 5718 ####
