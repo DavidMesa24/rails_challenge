@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+gem 'railties', '~> 7.0', '>= 7.0.4'
+
 # Use postgresql as the database for Active Record
 
 gem 'pg-aws_rds_iam', '~> 0.3.2'
@@ -27,6 +29,8 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem 'mail', '~> 2.8'
 
 # devise for authentication
 gem 'devise'

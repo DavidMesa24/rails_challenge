@@ -43,7 +43,7 @@ class BanksController < ApplicationController
     @bank.destroy
     redirect_to banks_url, :notice => "Successfully destroyed bank."
     else
-      redirect_to banks_url, :notice => "Bank is in use. Delete the supplier first."
+      redirect_to banks_url, :notice => "Bank is in use. Delete the supplier first or change bank."
     end
 
   end

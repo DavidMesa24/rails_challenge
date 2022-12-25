@@ -1,11 +1,11 @@
 <h1>Edit bank</h1>
-<%= simple_form_for @supplier, data: { turbo: false }, validate: true do |s|%>
-  <%= s.input :name, label: 'Supplier name', error: "Error: #{@supplier.errors.full_messages_for(:name).first}" %>
-  <%= s.input :nit, label: "NIT", error: "Error: #{@supplier.errors.full_messages_for(:nit).first}" %>
-  <%= s.input :contact_name, label: 'Contact name', error: "Error: #{@supplier.errors.full_messages_for(:contact_name).first}" %>
-  <%= s.input :contact_cel, label: 'Contact phone', error: "Error: #{@supplier.errors.full_messages_for(:contact_cel).first}" %>
-  <%= s.label "Bank" %>
-  <%= s.collection_select (:bank_id ), Bank.all, :id, :name, {class: "form-control"}%>
-  <%= s.input :account_number, label: 'Account number', error: "Error: #{@supplier.errors.full_messages_for(:account_number).first}" %>
-  <%= s.submit "Save", class: "btn btn-primary" %>
-<% end %>
+  <%= simple_form_for @supplier, data: { turbo: false }, validate: true do |s|%>
+    <%=t s.input :name, label: 'Supplier name', error: "Error: #{@supplier.errors.full_messages_for(:name).first}" %>
+    <%=t s.input :nit, label: "NIT", error: "Error: #{@supplier.errors.full_messages_for(:nit).first}" %>
+    <%=t s.input :contact_name, label: 'Contact name', error: "Error: #{@supplier.errors.full_messages_for(:contact_name).first}" %>
+    <%=t s.input :contact_cel, label: 'Contact phone', error: "Error: #{@supplier.errors.full_messages_for(:contact_cel).first}" %>
+    <%=t s.label "Bank" %>
+    <%=t s.collection_select (:bank_id ), Bank.all, :id, :name, {class: "form-control"}%>
+    <%=t s.input :account_number, label: 'Account number', error: "Error: #{@supplier.errors.full_messages_for(:account_number).first}" %>
+    <%=t s.submit "Save", class: "btn btn-primary" %>
+  <% end %>
